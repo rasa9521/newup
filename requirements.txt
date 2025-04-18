@@ -1,6 +1,5 @@
 async-lru==2.0.2
 cloudscraper
-python-telegram-bot==20.0
 PyPDF2
 reportlab
 beautifulsoup4==4.9.3
@@ -10,7 +9,7 @@ ffmpeg
 m3u8
 helper
 certifi==2023.5.7
-bs4
+bs4==0.0.1
 charset-normalizer==3.1.0
 idna==3.4
 mutagen==1.46.0
@@ -19,11 +18,11 @@ google-auth
 google-auth-oauthlib
 google-auth-httplib2
 google-api-python-client
-pycryptodomex
+pycryptodome==3.18.0
 pyrofork
 PySocks==1.7.1
 python-dotenv==1.0.0
-requests
+requests==2.32.2
 soupsieve==2.4.1
 TgCrypto==1.2.5
 urllib3==2.0.3
@@ -31,7 +30,6 @@ websockets==12.0
 yt-dlp==2024.08.06
 motor
 aiohttp
-asyncio
 aiofiles
 pytz
 umongo==3.1.0
@@ -41,3 +39,6 @@ gunicorn==20.1.0
 Jinja2==3.0.3
 werkzeug==2.0.2
 itsdangerous==2.0.1
+pycryptodomex
+asyncio
+TgCrypto==1.2.5
