@@ -662,36 +662,36 @@ async def account_login(bot: Client, m: Message):
             try:                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
                
                cc = (
-                      f"**[🎥]Vid Id** : {str(count).zfill(3)}[{res}]\n"
-                      f"**Video Title** : `{name1}.mkv`\n"
-                      f"<blockquote><b>**Batch Name** : `{b_name}`</b></blockquote>\n\n"
+                      f"**[🎥]Vid Id** : {str(count).zfill(3)}\n"
+                      f"**Video Title** : `{name1} [{res}] .mkv`\n"
+                      f"<blockquote><b>**Batch Name** : {b_name}</b></blockquote>\n\n"
                       f"<b>Extracted By ➤ {MR}</b>\n"
                      )                
                 
                cc1 = (             
                      f"[📁]**PDF Id** : {str(count).zfill(3)}\n"
                      f"**File Title** : `{name1}.pdf`\n"
-                     f"<blockquote><b>**Batch Name** : `{b_name}`</b></blockquote>\n\n"
+                     f"<blockquote><b>**Batch Name** : {b_name}</b></blockquote>\n\n"
                      f"<b>Extracted By ➤ {MR}</b>\n" 
                     )
 
                cc2 = (
                       f"[📁]**Photo ID**: {str(count).zfill(3)}\n"
                       f"**File Title** : `{name1}.jpg`\n"
-                      f"<blockquote><b>**Batch Name** : `{b_name}`</b></blockquote>\n\n"
+                      f"<blockquote><b>**Batch Name** : {b_name}</b></blockquote>\n\n"
                       f"<b>Extracted By ➤ {MR}</b>\n"
                       )                
                cczip = (
                       f"**[🎥]ZIP Id** : {str(count).zfill(3)}\n"
                       f"**Video Title** : `{name1}.zip`\n"
-                      f"<blockquote><b>**Batch Name** : `{b_name}`</b></blockquote>\n\n"
+                      f"<blockquote><b>**Batch Name** : {b_name}</b></blockquote>\n\n"
                       f"<b>Extracted By ➤ {MR}</b>\n"
                      )
               
                ccyt = (
                       f"**[🎥]Vid Id** : {str(count).zfill(3)}[{res}]\n"
-                      f"**Video Title** : `{name1}.mkv`\n"
-                      f"<blockquote><b>**Batch Name** : `{b_name}`</b></blockquote>\n\n"
+                      f"**Video Title** : `{name1} [{res}] .mkv`\n"
+                      f"<blockquote><b>**Batch Name** : {b_name}</b></blockquote>\n\n"
                       f"<b>Extracted By ➤ {MR}</b>\n"
                      )
 
@@ -716,7 +716,7 @@ async def account_login(bot: Client, m: Message):
                       
                elif ".zip" in url:
                 url = f"https://video.pablocoder.eu.org/appx-zip?url={url}"
-                await bot.send_photo(chat_id=m.chat.id, photo=photozip, caption=f"**[📁]ZIP Id** : {str(count).zfill(3)}\n**File Title** : `{name1}.pdf`\n<blockquote><b>**Batch Name** : `{b_name}`</b></blockquote>\n\n<a href='{url}'>ZIP VIDEO PLAYER</a>\nExtracted By ➤ {MR}</b>\n")
+                await bot.send_photo(chat_id=m.chat.id, photo=photozip, caption=f"**[📁]ZIP Id** : {str(count).zfill(3)}\n**File Title** : {name1}.zip\n<blockquote><b>**Batch Name** : `{b_name}`</b></blockquote>\n\n<a href='{url}'>ZIP VIDEO PLAYER</a>\nExtracted By ➤ {MR}</b>\n")
                 count += 1
                 time.sleep(1)      
                 continue
