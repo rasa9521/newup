@@ -46,6 +46,7 @@ photo = "https://tinypic.host/image/Screenshot-2025-03-19-06-40-21-30.3gKoOw"
 api_url = "http://master-api-v3.vercel.app/"
 api_token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNzkxOTMzNDE5NSIsInRnX3VzZXJuYW1lIjoi4p61IFtvZmZsaW5lXSIsImlhdCI6MTczODY5MjA3N30.SXzZ1MZcvMp5sGESj0hBKSghhxJ3k1GTWoBUbivUe1I"
 #token_cp = "eyJhbGciOiJIUzM4NCIsInR5cCI6IkpXVCJ9.eyJpZCI6MTIxMzgyNjMyLCJvcmdJZCI6NTU3MywidHlwZSI6MSwibW9iaWxlIjoiOTE4NjE4MDg2MDg5IiwibmFtZSI6Ik5pbGVzaCIsImVtYWlsIjoicHJpbmNlY2hhcmFuMjUwNEBnbWFpbC5jb20iLCJpc0ludGVybmF0aW9uYWwiOjAsImRlZmF1bHRMYW5ndWFnZSI6IkVOIiwiY291bnRyeUNvZGUiOiJJTiIsImNvdW50cnlJU08iOiI5MSIsInRpbWV6b25lIjoiR01UKzU6MzAiLCJpc0RpeSI6dHJ1ZSwib3JnQ29kZSI6ImFjbWVhIiwiaXNEaXlTdWJhZG1pbiI6MCwiZmluZ2VycHJpbnRJZCI6IjljMzkwMTVkOWIyNjRlNWFiMWZkM2M3MjcxNTZjZGQzIiwiaWF0IjoxNzQ0NTE5NzExLCJleHAiOjE3NDUxMjQ1MTF9.ZTB77NTdTYHTR4ub4zFzxgSMdYw1APXbeQC7VflRMbNWkxjHYmxD1v1m_yyTKSJ9"
+adda_token = "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJkcGthNTQ3MEBnbWFpbC5jb20iLCJhdWQiOiIxNzg2OTYwNSIsImlhdCI6MTc0NDk0NDQ2NCwiaXNzIjoiYWRkYTI0Ny5jb20iLCJuYW1lIjoiZHBrYSIsImVtYWlsIjoiZHBrYTU0NzBAZ21haWwuY29tIiwicGhvbmUiOiI3MzUyNDA0MTc2IiwidXNlcklkIjoiYWRkYS52MS41NzMyNmRmODVkZDkxZDRiNDkxN2FiZDExN2IwN2ZjOCIsImxvZ2luQXBpVmVyc2lvbiI6MX0.0QOuYFMkCEdVmwMVIPeETa6Kxr70zEslWOIAfC_ylhbku76nDcaBoNVvqN4HivWNwlyT0jkUKjWxZ8AbdorMLg"
 
 import random
 
@@ -605,7 +606,7 @@ async def account_login(bot: Client, m: Message):
                 if url.split("/")[3] != "demo":
                     url = f'https://videotest.adda247.com/demo/{url.split("https://videotest.adda247.com/")[1]}'
             if 'amazonaws.com' in url:
-                url =  f"https://master-api-v3.vercel.app/adda-mp4-m3u8?url={url}&quality={raw_text2}&token={raw_text4}"
+                url =  f"https://master-api-v3.vercel.app/adda-mp4-m3u8?url={url}&quality={raw_text2}&token={adda_token}"
                 
             if "appx-recordings-mcdn.akamai.net.in/drm/" in url:
                 cmd = f'ffmpeg -i "{url}" -c copy -bsf:a aac_adtstoasc "{name}.mp4"'
