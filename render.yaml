@@ -1,0 +1,20 @@
+services:
+  - type: web
+    name: CHIRU DRM Uploader 
+    plan: free
+    env: docker
+    dockerfilePath: Dockerfile
+    repo: https://github.com/Chiru63019/Classplusdrm
+    branch: main
+    autoDeploy: false
+    envVars:
+      - key: token_cp
+        sync: true
+      - key: BOT_TOKEN
+        sync: true
+      - key: API_ID
+        sync: false
+      - key: API_HASH
+        sync: false
+      - key: PORT
+        value: 8000  # Default port value, update if needed
