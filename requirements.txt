@@ -1,5 +1,6 @@
 async-lru==2.0.2
 cloudscraper
+python-telegram-bot==20.0
 PyPDF2
 reportlab
 beautifulsoup4==4.9.3
