@@ -65,15 +65,12 @@ keyboard = InlineKeyboardMarkup(
 # Image URLs for the random image feature
 image_urls = [
     
-    "https://tinypic.host/image/Screenshot-2025-03-19-06-40-21-30.3gKoOw",
-    "https://tinypic.host/image/Screenshot-2025-03-19-06-40-21-30.3gKoOw",
-    "https://tinypic.host/image/Screenshot-2025-03-19-06-40-21-30.3gKoOw",
-    "https://tinypic.host/image/Screenshot-2025-03-19-06-40-21-30.3gKoOw",
-    "https://tinypic.host/image/Screenshot-2025-03-19-06-40-21-30.3gKoOw",
-    "https://tinypic.host/image/Screenshot-2025-03-19-06-40-21-30.3gKoOw",
-    "https://tinypic.host/image/Screenshot-2025-03-19-06-40-21-30.3gKoOw",
-    "https://tinypic.host/image/Screenshot-2025-03-19-06-40-21-30.3gKoOw",
-    # Add more image URLs as needed
+    "https://tinypic.host/image/f7c01836-029c-43a4-ba28-1ba560324854.3uJ4bk",
+    "https://tinypic.host/image/chairman-of-india-tata-motors-ratan-tata-geneva-international-motor-show-march-3-2009.3uJbBO",
+    "https://tinypic.host/image/Ratan-Tata-Sir.3uJtPm",
+    "https://tinypic.host/image/deb1be93-841d-4854-8a76-e87e4a001507.3uJzMv",
+    "https://tinypic.host/image/19e80aae-ed06-4b93-9f57-f5a3e03436af.3uJ7Ow",
+    #Add more image URLs as needed
 ]
 # Start command handler
 @bot.on_message(filters.command(["start"]))
@@ -88,11 +85,11 @@ async def start_command(bot: Client, message: Message):
     random_image_url = random.choice(image_urls)
     
     # Caption for the image
-    caption = ("""
-<blockquote>🌟 <b>Welcome Buddy....! ☠️!</b> 🌟</blockquote><br><br>
+    caption = ("""   
+🌟 <b>Welcome Buddy....! ☠️!</b> 🌟<br><br>
 
 /help <b>to know about all the commonds</b> 📄 \n<br><br>
-<b>Contact Me</b> [🅱🅴🅰🆂🆃 👑](tg://user?id=7517045929)<b>to Get The Subscription</b> 🎫<br>
+<blockquote><b>Contact Me</b> [🅱🅴🅰🆂🆃 👑](tg://user?id=7517045929)<b>to Get The Subscription</b></blockquote> 🎫<br>
 """)
     await asyncio.sleep(1)
     await loading_message.edit_text(
@@ -669,34 +666,34 @@ async def account_login(bot: Client, m: Message):
                cc = (
                       f"**[🎥]Vid Id** : {str(count).zfill(3)}\n"
                       f"**Video Title** : `{name1}.mkv`\n"
-                      f"<blockquote>**Batch Name** : `{b_name}`</blockquote>\n\n"
+                      f"<blockquote><b>**Batch Name** : `{b_name}`</b></blockquote>\n\n"
                       f"<b>Extracted By ➤ {MR}</b>\n"
                      )                
                 
                cc1 = (             
                      f"[📁]**PDF Id** : {str(count).zfill(3)}\n"
                      f"**File Title** : `{name1}.pdf`\n"
-                     f"<blockquote>**Batch Name** : `{b_name}`</blockquote>\n\n"
+                     f"<blockquote><b>**Batch Name** : `{b_name}`</b></blockquote>\n\n"
                      f"<b>Extracted By ➤ {MR}</b>\n" 
                     )
 
                cc2 = (
                       f"[📁]**Photo ID**: {str(count).zfill(3)}\n"
                       f"**File Title** : `{name1}.jpg`\n"
-                      f"<blockquote>**Batch Name** : `{b_name}`</blockquote>\n\n"
+                      f"<blockquote><b>**Batch Name** : `{b_name}`</b></blockquote>\n\n"
                       f"<b>Extracted By ➤ {MR}</b>\n"
                       )                
                cczip = (
                       f"**[🎥]ZIP Id** : {str(count).zfill(3)}\n"
                       f"**Video Title** : `{name1}.zip`\n"
-                      f"<blockquote>**Batch Name** : `{b_name}`</blockquote>\n\n"
+                      f"<blockquote><b>**Batch Name** : `{b_name}`</b></blockquote>\n\n"
                       f"<b>Extracted By ➤ {MR}</b>\n"
                      )
               
                ccyt = (
                       f"**[🎥]Vid Id** : {str(count).zfill(3)}\n"
                       f"**Video Title** : `{name1}.mkv`\n"
-                      f"<blockquote>**Batch Name** : `{b_name}`</blockquote>\n\n"
+                      f"<blockquote><b>**Batch Name** : `{b_name}`</b></blockquote>\n\n"
                       f"<b>Extracted By ➤ {MR}</b>\n"
                      )
 
@@ -816,7 +813,7 @@ async def account_login(bot: Client, m: Message):
                elif 'encrypted.m' in url:  
                    progress = (count / len(links)) * 100
                    remaining_links = len(links) - count
-                   Show = f"<blockquote>✈️ 𝐏𝐑𝐎𝐆𝐑𝐄𝐒𝐒 ✈️</blockquote>\n\n┠ 📊 Total Links = {len(links)}\n┠ ⚡ Currently On = {str(count)}\n┠ ⏳ Remaining Links = {remaining_links}\n\n**📤 𝐔𝐏𝐋𝐎𝐀𝐃𝐈𝐍𝐆! 📤**\n\n<blockquote>📗 **Batch Name** : `{b_name}` 🅱🅴🅰🆂🆃 👑</blockquote>\n\n⏳ Uploading your videos may take some time\n\n╭────────◆◇◆────────╮\n⚡ <blockquote>MADE BY : [🅱🅴🅰🆂🆃 👑](t.me/skillwithchiru) </blockquote>\n╰────────◆◇◆────────╯\n"
+                   Show = f"✈️ 𝐏𝐑𝐎𝐆𝐑𝐄𝐒𝐒 ✈️\n\n┠ 📊 Total Links = {len(links)}\n┠ ⚡ Currently On = {str(count)}\n┠ ⏳ Remaining Links = {remaining_links}\n\n**📤 𝐔𝐏𝐋𝐎𝐀𝐃𝐈𝐍𝐆! 📤**\n\n<blockquote>📗 **Batch Name** : `{b_name}` 🅱🅴🅰🆂🆃 👑</blockquote>\n\n⏳ Uploading your videos may take some time\n\n <blockquote>⚡ MADE BY : [🅱🅴🅰🆂🆃 👑](tg://user?id=7517045929)</blockquote>\n"
                    #f"✈️ 𝐏𝐑𝐎𝐆𝐑𝐄𝐒𝐒 ✈️\n\n┠ 📈 Total Links = {len(links)}\n┠ 💥 Currently On = {str(count).zfill(3)}\n\n**📩 𝐃𝐎𝐖𝐍𝐋𝐎𝐀𝐃𝐈𝐍𝐆 📩**\n\n**🧚🏻‍♂️ Title** : {name}\n├── **Extention** : {MR}\n├── **Resolution** : {raw_text2}\n├── **Url** : `Kya karega URL dekh ke  BSDK 👻👻`\n├── **Thumbnail** : `{input6.text}`\n├── **Bot Made By** : 🅱🅴🅰🆂🆃 👑" 
                    prog = await m.reply_text(Show)  
                    res_file = await helper.download_and_decrypt_video(url, cmd, name, appxkey)  
@@ -831,7 +828,7 @@ async def account_login(bot: Client, m: Message):
                elif 'drmcdni' in url or 'drm/wv' in url:
                     progress = (count / len(links)) * 100
                     remaining_links = len(links) - count      
-                    Show = f"<blockquote>✈️ 𝐏𝐑𝐎𝐆𝐑𝐄𝐒𝐒 ✈️</blockquote>\n\n┠ 📊 Total Links = {len(links)}\n┠ ⚡ Currently On = {str(count)}\n┠ ⏳ Remaining Links = {remaining_links}\n\n**📤 𝐔𝐏𝐋𝐎𝐀𝐃𝐈𝐍𝐆! 📤**\n\n<blockquote>📗 **Batch Name** : `{b_name}` 🅱🅴🅰🆂🆃 👑</blockquote>\n\n⏳ Uploading your videos may take some time\n\n╭────────◆◇◆────────╮\n⚡ <blockquote>MADE BY : [🅱🅴🅰🆂🆃 👑](t.me/skillwithchiru) </blockquote>\n╰────────◆◇◆────────╯\n"
+                    Show = f"✈️ 𝐏𝐑𝐎𝐆𝐑𝐄𝐒𝐒 ✈️\n\n┠ 📊 Total Links = {len(links)}\n┠ ⚡ Currently On = {str(count)}\n┠ ⏳ Remaining Links = {remaining_links}\n\n**📤 𝐔𝐏𝐋𝐎𝐀𝐃𝐈𝐍𝐆! 📤**\n\n<blockquote>📗 **Batch Name** : `{b_name}` 🅱🅴🅰🆂🆃 👑</blockquote>\n\n⏳ Uploading your videos may take some time\n\n <blockquote>⚡ MADE BY : [🅱🅴🅰🆂🆃 👑](tg://user?id=7517045929) </blockquote>\n\n"
                     prog = await m.reply_text(Show)
 
                     # Use the decrypt_and_merge_video function
@@ -848,7 +845,7 @@ async def account_login(bot: Client, m: Message):
                else:
                     progress = (count / len(links)) * 100
                     remaining_links = len(links) - count
-                    Show = f"<blockquote>✈️ 𝐏𝐑𝐎𝐆𝐑𝐄𝐒𝐒 ✈️</blockquote>\n\n┠ 📊 Total Links = {len(links)}\n┠ ⚡ Currently On = {str(count)}\n┠ ⏳ Remaining Links = {remaining_links}\n\n**📤 𝐔𝐏𝐋𝐎𝐀𝐃𝐈𝐍𝐆! 📤**\n\n<blockquote>📗 **Batch Name** : `{b_name}` 🅱🅴🅰🆂🆃 👑</blockquote>\n\n⏳ Uploading your videos may take some time\n\n╭────────◆◇◆────────╮\n⚡ </blockquote>MADE BY : [🅱🅴🅰🆂🆃 👑](t.me/skillwithchiru) </blockquote>\n╰────────◆◇◆────────╯\n"
+                    Show = f"✈️ 𝐏𝐑𝐎𝐆𝐑𝐄𝐒𝐒 ✈️\n\n┠ 📊 Total Links = {len(links)}\n┠ ⚡ Currently On = {str(count)}\n┠ ⏳ Remaining Links = {remaining_links}\n\n**📤 𝐔𝐏𝐋𝐎𝐀𝐃𝐈𝐍𝐆! 📤**\n\n<blockquote>📗 **Batch Name** : `{b_name}` 🅱🅴🅰🆂🆃 👑</blockquote>\n\n⏳ Uploading your videos may take some time\n\n</blockquote>⚡ MADE BY : [🅱🅴🅰🆂🆃 👑](tg://user?id=7517045929) </blockquote>\n\n"
                     prog = await m.reply_text(Show)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  
                     res_file = await helper.download_video(url, cmd, name)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  
                     filename = res_file                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  
