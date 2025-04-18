@@ -128,6 +128,7 @@ async def start_command(bot: Client, message: Message):
         chat_id=message.chat.id,
         photo=random_image_url,
         caption=caption.format(message.from_user.mention),
+        parse_mode='HTML',
         reply_markup=keyboard
     )
 
