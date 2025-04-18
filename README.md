@@ -7,7 +7,7 @@
   🇮🇳 BEAST ᴛxᴛ ᴜᴘʟᴏᴀᴅᴇʀ 🇮🇳
 </h1>
 
-![Typing SVG](https://readme-typing-svg.herokuapp.com/?lines=Welcome+To+Txt+Uploader+Bot+!)
+![Typing SVG](https://readme-typing-svg.herokuapp.com/?lines=Welcome+To+🅱🅴🅰🆂🆃 👑+Uploader+Bot+!)
 
 ## Credit
 
