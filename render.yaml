@@ -9,16 +9,16 @@ services:
     autoDeploy: false
     envVars:
       - key: token_cp
-        value:""
+        value:
         sync: true
       - key: BOT_TOKEN
-        value:""
+        value:
         sync: true
       - key: API_ID
-        value:""
+        value:
         sync: false
       - key: API_HASH
-        value:""
+        value:
         sync: false
       - key: PORT
         value: 8000  # Default port value, update if needed
