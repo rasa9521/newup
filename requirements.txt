@@ -37,3 +37,4 @@ pyopenssl
 wget
 bs4
 beautifulsoup4
+python-telegram-bot==20.0
