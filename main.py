@@ -22,7 +22,7 @@ import sys
 import re    
 import os 
 import urllib
-import urllib.parse
+#import urllib.parse
 import tgcrypto
 import cloudscraper
 from Crypto.Cipher import AES
