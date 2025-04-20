@@ -144,8 +144,8 @@ SUBSCRIPTION_FILE = "subscription_data.txt"
 CHANNELS_FILE = "channels_data.json"
 
 # Admin ID
-YOUR_ADMIN_ID = 6133985472
-ADMIN_ID = 6133985472
+YOUR_ADMIN_ID = 7804396225
+ADMIN_ID = 7804396225
 
 def is_admin(user_id):
     return user_id == YOUR_ADMIN_ID
